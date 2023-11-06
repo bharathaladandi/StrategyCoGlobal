@@ -1,5 +1,8 @@
 const mongoose = require("mongoose");
 
-const connect = mongoose.connect("mongodb://127.0.0.1:27017/StrategyCoGlobal");
+require("dotenv").config();
+mongoose.set('strictQuery', true);
+
+const connect = mongoose.connect(process.env.DB_URL);
 
 module.exports = connect;
