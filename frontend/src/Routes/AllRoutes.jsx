@@ -8,7 +8,7 @@ export const AllRoutes = () => {
     <div>
         <Routes>
             <Route path='/' element={<MovieList />}></Route>
-            <Route path='/:movieID' element={<MovieDetails />}></Route>
+            <Route path='/movies/:imdbID' element={<MovieDetails />}></Route>
         </Routes>
     </div>
   )
