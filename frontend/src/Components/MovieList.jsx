@@ -38,10 +38,10 @@ export const MovieList = () => {
     };
 
     return (
+        <div className="container">
         <div>
-        <div>
-            <h1>Movies</h1>
-            <div>
+            <h1 className="title">Movies</h1>
+            <div className="searchcon">
                 <input
                     type="text"
                     placeholder="Search for movies..."
@@ -50,19 +50,19 @@ export const MovieList = () => {
                 />
                 <button onClick={handleSearchClick}>Search</button>
             </div>
-            <div>
+            <div className="containersecound">
                 {movies === undefined ?
-                    <div>
+                    <div className="title">
                         No movie found please search another movie
                     </div>
                     :
-                    <div>
+                    <div className="grid">
                         {movies.map((movie) => (
-                            <div key={movie.imdbID}>
-                                <Link to={`/movies/${movie.imdbID}`}>
-                                <img src={movie.Poster} alt={movie.Title}/>
-                                <div>
-                                    <p>{movie.Title}</p>
+                            <div key={movie.imdbID} className="card">
+                                <Link to={`/movies/${movie.imdbID}`} className="movielink">
+                                <img src={movie.Poster} alt={movie.Title} className="movieImage" />
+                                <div className="movieinfo">
+                                    <p className="movietitle">{movie.Title}</p>
                                 </div>
                                 </Link>
                             </div>
