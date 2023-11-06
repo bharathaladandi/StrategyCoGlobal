@@ -11,7 +11,7 @@ MovieRouter.get('/', (req, res) => {
     const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`
 
     axios.get(apiUrl)
-        .then((responce) => res.json(responce.data))
+        .then((response) => res.json(response.data))
         .catch((err) => res.status(500).json({err:"Failed to fetch data"}))
 
 });
