@@ -9,7 +9,8 @@ const apiKey = process.env.apiKey
 MovieRouter.get('/api/movies', (req, res) => {
 
     const searchQuery = req.query.search;
-    const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`
+    const page = parseInt(req.query.page) || 1;
+    const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}&page=${page}`
 
     axios.get(apiUrl)
         .then((response) => res.json(response.data))
