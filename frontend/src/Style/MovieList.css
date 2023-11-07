@@ -78,12 +78,6 @@
     margin: 0;
   }
   
-  .movie-year, .movie-type {
-    font-size: 14px;
-    color: white;
-    margin: 5px 0;
-  }
-  
   .movielink {
     display: block;
     padding: 10px;

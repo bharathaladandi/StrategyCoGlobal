@@ -11,9 +11,8 @@ export const MovieDetails = () => {
 
     useEffect(() => {
         setLoading(true)
-        axios.get(`http://localhost:8080/movies/api/movies/${imdbID}`)
+        axios.get(`https://shy-ruby-duckling-sock.cyclic.app/movies/api/movies/${imdbID}`)
             .then((response) => {
-                console.log(response.data);
                 setMovieDetails(response.data)
                 setLoading(false);
             })

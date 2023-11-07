@@ -14,10 +14,9 @@ export const MovieList = () => {
         setLoading(true)
         if (searchMovie) {
             // Fetch data after search
-            axios.get(`http://localhost:8080/movies/api/movies?search=${searchMovie}`)
+            axios.get(`https://shy-ruby-duckling-sock.cyclic.app/movies/api/movies?search=${searchMovie}`)
                 .then((response) => {
                     setMovies(response.data.Search)
-                    console.log(response.data.Search);
                     setLoading(false)
                 })
                 .catch((error) => {
@@ -27,10 +26,9 @@ export const MovieList = () => {
         }
         else {
             // Fetch default data
-            axios.get('http://localhost:8080/movies/api/movies?search=Avengers')
+            axios.get('https://shy-ruby-duckling-sock.cyclic.app/movies/api/movies?search=Avengers')
                 .then((response) => {
                     setMovies(response.data.Search || []);
-                    console.log(response.data.Search || []);
                     setLoading(false)
                 })
                 .catch((error) => {
