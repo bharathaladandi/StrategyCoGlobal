@@ -18,7 +18,7 @@ export const MovieList = () => {
             // Fetch data after search
             axios.get(`https://shy-ruby-duckling-sock.cyclic.app/movies/api/movies?search=${searchMovie}&page=${page}`)
                 .then((response) => {
-                    setMovies(response.data.Search || [])
+                    setMovies(response.data.Search)
                     setTotalPage(response.data.totalResults || 0);
                     setLoading(false)
                 })
