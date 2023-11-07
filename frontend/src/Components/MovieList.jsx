@@ -36,6 +36,8 @@ export const MovieList = () => {
                     setLoading(false);
                 })
         }
+        
+        setSearch("")
 
     }, [searchMovie]);
 
