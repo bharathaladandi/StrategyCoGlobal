@@ -44,7 +44,7 @@ This is an movies app, you can search your favorite movie here and get all infor
 
 
 
-## ✅ **Netlify link** [Click Here To See Magic](https://frontend-bharathaladandi.vercel.app/)
+## ✅ **Versel link** [Click Here To See Magic](https://frontend-bharathaladandi.vercel.app/)
 
 
 # Installation
