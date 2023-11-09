@@ -54,7 +54,9 @@ export const MovieList = () => {
 
         <div className="container">
             <div>
-                <h1 className="title">Movies</h1>
+                <header>
+                    <h1>Movie Browsing App</h1>
+                </header>
                 <div className="searchcon">
                     <input
                         type="text"
@@ -108,7 +110,6 @@ export const MovieList = () => {
                 )}
 
             </div>
-
-        </div>
+        </div >
     )
 }

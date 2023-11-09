@@ -1,8 +1,8 @@
-.container {
+/* .container {
     text-align: center;
     padding: 20px;
     background-color: #16181f;
-  }
+  } */
 
   .containersecound {
     width: 80%;
@@ -50,14 +50,17 @@
     background-color: rgb(25, 158, 147);
   }
   
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px; 
-    justify-content: center;
-    grid-template-rows: auto;
-    align-content: flex-start; 
+  @media only screen and (min-width: 768px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px; 
+      justify-content: center;
+      grid-template-rows: auto;
+      align-content: flex-start; 
+    }
   }
+  
   
   .card {
     width: 100%;
@@ -122,4 +125,12 @@
 .paginationinfo {
   font-size: 18px;
   margin: 0 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .gird {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
