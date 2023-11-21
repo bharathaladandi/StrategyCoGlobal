@@ -48,7 +48,7 @@ This is an movies app, you can search your favorite movie here and get all infor
 
 
 # Installation
-  npm install create-react-app 
+  npm install 
   <br/>
    cd StrategyCoGlobal
    <br/>
